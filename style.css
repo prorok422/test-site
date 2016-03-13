@@ -13,7 +13,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, footer, header,/*hgroup*/
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -27,7 +27,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header,/*hgroup*/ menu, nav, section {
 	display: block;
 }
 
@@ -145,6 +145,7 @@ nav {
 	background: #fff;
 	cursor: pointer;
 	border-radius: 10px;
+
 }
 
 .control-nav li a.active, .control-nav li a:hover {
@@ -180,17 +181,15 @@ ul.main-navigation:after{
 	clear: both;
 }
 
-.main-navigation a.active:before,
-.main-navigation li a:hover:before {
+ li a:hover:before {
 	content: '';
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	width: 34px;
-	height: 34px;
-	margin: -17px 0 0 -17px;
-	background: url(img/line_active.png) no-repeat;
-}
+	width: 100%;
+	height: 2px;
+	margin: 10px -15px 0 0;
+	background: white;
+	}
 
 .menu-icon {
 	display: none;
@@ -751,7 +750,6 @@ button.btn:focus { outline: none; }
 	}
 
 	/*Our Philoshophy*/
-
 	.promo .img {
 		width: 100%;
 		text-align: center;
@@ -788,24 +786,27 @@ button.btn:focus { outline: none; }
 		text-align: left;
 	}
 
-	.ourph img{
+	.ourph img {
 		width: 100%;
 	}
 
 	.ourph .btn {
-	margin-left: 0;
-}
+		margin-left: 0;
+	}
 
 	/* Video */
-
 	.video p {
 		padding-top: 160px;
 		font-size: 1.9rem;
 	}
 
 	/* Instagram */
-
 	.instagram {
 		display: none;
 	}
 }
+
+/*
+a{	font-size: 30px;
+	text-decoration: dashed;
+}*/
