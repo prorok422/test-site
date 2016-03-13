@@ -207,6 +207,14 @@ ul.main-navigation:after{
 	float: right;
 }
 
+.search-icon:hover:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 2px;
+}
+
 .wrap {
 	max-width: 1170px;
 	margin: 0 auto;
