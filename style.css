@@ -1,0 +1,811 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+h2 {
+	color: #303030;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.875em;
+	font-style: italic;
+	line-height: 1.5em;
+}
+
+p {
+	color: #515151;
+	font-family: 'Raleway',sans-serif;
+	font-size: 0.75em;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+
+/* Header */
+
+header {
+	height: 0;
+	padding-bottom: 57.25%;
+	background: url(img/bg-slider.png) no-repeat 50% 50%;
+	background-size: cover;
+	position: relative;
+}
+
+.logo {
+	margin-top: 59px;
+	margin-left: 89px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+#check {
+	display: none;
+}
+
+.menu-icon {
+	cursor: pointer;
+}
+
+#check:checked + .main-navigation {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0,0);
+}
+
+.main-navigation {
+	display: inline-block;
+}
+
+.control-nav {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 30px;
+}
+
+.control-nav li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.control-nav li a {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	border: 2px solid #fff;
+	background: #fff;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.control-nav li a.active, .control-nav li a:hover {
+	border: 2px solid #fff;
+	background: transparent;
+}
+
+.main-navigation > li {
+	margin-right: 35px;
+	display: block;
+	float: left;
+
+	color: #000;
+	text-align: center;
+
+	cursor: pointer;
+}
+
+.main-navigation a {
+	font-family: Raleway;
+	font-size: 0.813em;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 12.2rem;
+	color: white;
+	position: relative;
+}
+
+ul.main-navigation:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.main-navigation a.active:before,
+.main-navigation li a:hover:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 34px;
+	height: 34px;
+	margin: -17px 0 0 -17px;
+	background: url(img/line_active.png) no-repeat;
+}
+
+.menu-icon {
+	display: none;
+}
+
+.menu-icon {
+	margin-top: 91px;
+	padding-right: 35px;
+	float: right;
+}
+
+.search-icon {
+	margin-top: 91px;
+	padding-right: 57px;
+	float: right;
+}
+
+.wrap {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.button {
+	display: inline-block;
+	cursor: pointer;
+	background-color: transparent;
+	transition: all .3s ease-in-out;
+}
+
+/*About Me*/
+
+.about-me {
+	text-align: center;
+}
+
+.ava {
+	max-width: 100%;
+	margin-top: 89px;
+	margin-bottom: 57px;
+}
+
+.dott {
+	width: 8px;
+	height: 8px;
+	background-color: #e8e8e8;
+	position: relative;
+	border-radius: 100%;
+	margin: 0 auto;
+	margin-top: 32px;
+	margin-bottom: 32px
+}
+
+.line1 {
+	height: 1px;
+	width: 23px;
+	background-color: #e8e8e8;
+	position: absolute;
+	top: 50%;
+	left: 200%;
+
+}
+
+.line2 {
+	height: 1px;
+	width: 23px;
+	background-color: #e8e8e8;
+	position: absolute;
+	top: 50%;
+	left: -400%;
+}
+
+.about-me p {
+	margin: 32px auto;
+}
+
+.about-me h5 {
+	color: #303030;
+	font-family:'Playfair Display', serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: 900;
+
+}
+
+/* Social */
+
+.social img {
+	width: 42px;
+	height: 42px;
+	border: 1px solid #868686;
+	border-radius: 50%;
+}
+
+.social a {
+	display: block;
+	position: relative;
+	text-align: center;
+}
+
+.social a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+
+	border: 1px solid #e1571a;
+	border-radius:50%;
+	width: 42px;
+	height: 42px;
+
+	transition: all 0.3s ease-in-out;
+}
+
+.social a:hover:before {
+	opacity: 1;
+}
+
+.social a.fb:hover:before{
+	background: #e1571a url(img/fb-active.png) no-repeat;
+}
+
+.social a.tw:hover:before{
+	background: #e1571a url(img/tw-active.png) no-repeat;
+}
+
+.social a.gp:hover:before{
+	background: #e1571a url(img/gp-active.png) no-repeat;
+}
+
+.social a.dr:hover:before{
+	background: #e1571a url(img/dr-active.png) no-repeat;
+}
+
+.social a.pin:hover:before{
+	background: #e1571a url(img/p-active.png) no-repeat;
+}
+
+.social a.git:hover:before{
+	background: #e1571a url(img/git-active.png) no-repeat;
+}
+
+ul.social li {
+	cursor: pointer;
+	list-style: none;
+	display: block;
+	position: relative;
+	padding: 0;
+
+}
+
+ul.social li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 1%;
+
+}
+
+/* Portfolio */
+
+.portfolio {
+	margin-top: 70px;
+	margin-bottom: 90px;
+	text-align: center;
+}
+
+.portfolio-items {
+	list-style: none;
+	width: 100%;
+	display: inline-block;
+}
+
+.portfolio-items li {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px 8px;
+}
+
+.portfolio-detail {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	background: rgba(48,48,48,.6);
+	color: white;
+	transition: all .3s ease-in-out;
+}
+
+.vertical-centered {
+	position: absolute;
+	top: 42%;
+	left: 35%;
+	text-align: center;
+}
+
+.portfolio-items li:hover .portfolio-detail {
+	opacity: 1;
+}
+
+.portfolio-detail h3 {
+	font-family: 'Playfair Display',serif;
+	font-size: 19px;
+	font-style: italic;
+	line-height: 15px;
+}
+
+.portfolio-detail p {
+	padding-top: 14px;
+
+	font-family: 'Raleway',sans-serif;
+	font-size: 8px;
+	font-weight: 600;
+	line-height: 15px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+	.portfolio-items li img {
+	width: auto;
+	height: 100%;
+	display: block;
+}
+
+/* Promod Block */
+
+.promo {
+	width: 100%;
+}
+
+.promo .img{
+	float: left;
+	width: 50%;
+}
+.promo img {
+	float: right;
+}
+.promo .textarea {
+	width: 50%;
+	float: right;
+}
+.promo span {
+	display:block;
+}
+
+.promo h2 {
+	color: #303030;
+	font-family:  'PlayfairDisplay', serif;
+	font-size: 30px;
+	font-style: italic;
+	line-height: 48px;
+	margin-top: 60px;
+
+}
+.promo p {
+	color: #515151;
+	font-family: 'Raleway',sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+	margin-top: 27px;
+	width: 75%;
+}
+
+button.btn {
+	padding: 14px 33px;
+	margin-top: 37px;
+	font-family: 'Raleway',sans-serif;
+	font-size: 0.75em; /* 12/16 */
+	font-weight: 500;
+	text-transform: uppercase;
+	border: none;
+	background-color: #303030;
+	color: #fff;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+
+button.btn:hover {
+	background-color: #666;
+}
+
+button.btn:focus { outline: none; }
+
+/* Our Philoshophy */
+.ourph {
+	width: 100%;
+	margin-top: 102px;
+}
+
+.ourph h2 {
+	text-align: center;
+	/*margin-top: 70px;*/
+}
+
+.ourph article {
+	float: left;
+	width:100%;
+	margin-top: 18px;
+}
+
+.ourph img{
+	float: right;
+	width: 50%;
+	margin-left: 3%;
+	margin-bottom: 10%;
+}
+
+.ourph article p {
+	margin-top: 20px;
+	margin-left: 17%;
+	color: #515151;
+	line-height: 24px;
+}
+
+.ourph article h2 {
+	margin-left: 11%;
+}
+
+.ourph .btn {
+	margin-left: 17%;
+}
+
+
+/* Video */
+
+.video {
+	margin-top: 80px;
+}
+
+.bg-image {
+	position: relative;
+	background-color: black;
+	min-height: 585px;
+}
+
+.bg-image:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0.2;
+}
+
+.video:before {
+	background-image: url(img/bg_parallax.png);
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.video p {
+	padding-top: 207px;
+	text-align: center;
+	color: white;
+	font-family: 'Playfair Display',serif;
+	font-size: 2.25rem;
+	font-style: italic;
+}
+
+.circle {
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+	text-align: center;
+	box-sizing: content-box;
+	transition: all .3s ease-in-out;
+}
+
+.circle-arrow {
+	color: white;
+	border: 1px solid white;
+	background: url(img/ic-play.png) no-repeat 50% 50%;
+}
+
+.circle-arrow:hover {
+	opacity: 0.5;
+}
+
+/* Testimonial */
+
+.testimonial {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	text-align: center;
+}
+
+.testimonial img {
+	margin-top: 64px; 
+}
+
+.testimonial p {
+	max-width: 745px;
+	margin: 0 auto;
+	margin-top: 34px;
+	margin-bottom: 24px;
+	color: #515151;
+	font-family: 'Playfair Display',serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 24px;
+}
+
+.testimonial hr {
+	height: 2px;
+	width: 30px;
+	border: none;
+	background-color: #e8e8e8;
+}
+
+.testimonial .name {
+	margin-top: 20px;
+	color: #e1571a;
+	font-family: 'Raleway',sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.testimonial .position {
+	margin-bottom: 25px;
+	color: #303030;
+	font-family: 'Raleway',sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.testimonial .left {
+	padding: 10px;
+	height: auto;
+	border: 1px solid #e8e8e8;
+	background: url(img/ic-left.png) no-repeat 50% 50%;
+}
+
+.testimonial .right {
+	padding: 10px;
+	height: auto;
+	border: 1px solid #e8e8e8;
+	background: url(img/ic-right.png) no-repeat 50% 50%;
+}
+
+.testimonial .left:hover, .testimonial .right:hover {
+	border: 1px solid #303030;
+}
+
+
+/* Instagram */
+
+.instagram h2 {
+	text-align: center;
+}
+
+.instagram .dott {
+	margin-bottom: 64px;
+}
+
+.instagram img {
+	display: inline-block;
+} 
+
+.photo {
+	width: 20%;
+	height: 20%;
+	list-style: none;
+	float: left;
+}
+
+/* Footer */
+
+.footer {
+	/*height: 400px;*/
+	background: #141414;
+	color: #515151;
+	text-align: center;
+}
+
+.footer .mike_logo {
+	margin-top: 49px;
+}
+
+.footer p {
+	max-width: 749px;
+	margin: 0 auto;
+	margin-top: 29px;
+	margin-bottom: 26px;
+}
+
+.copyright {
+	margin: 33px 0;
+	color: #4c4c4c;
+	font-family: 'Raleway',sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.footer hr {
+	margin-top: 72px;
+	height: 1px;
+	width: 65.8%;
+	border: none;
+	background-color: #262626;
+}
+
+@media screen and (max-width: 1000px) {
+	.navigation {
+		width: 100%;
+	}
+
+	.main-navigation {
+		opacity: 0;
+		visibility: hidden;
+		transform: translate(0, -100%);
+		transition: all 0.3s ease;
+	}
+
+	.main-navigation a {
+		display: block;
+		margin-bottom: -1px;
+		padding: 8px 14px;
+		text-decoration: none;
+		line-height: 2rem;
+	}
+
+	ul.main-navigation {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		white-space: nowrap;
+		background: rgba(0, 0, 0, 0.9);
+		z-index: 1;
+	}
+
+	.main-navigation > li {
+		margin-right: 0;
+		float: none;
+	}
+
+	.menu-icon {
+		display: block;
+		position: relative;
+		z-index: 2;
+	}
+
+	/*Our Philoshophy*/
+
+	.promo .img {
+		width: 100%;
+		text-align: center;
+	}
+
+	.promo img {
+		float: none;
+	}
+
+	.promo .textarea {
+		text-align: center;
+		width: 95%;
+		float: none;
+	}
+
+	.promo p {
+		width: 95%;
+		text-align: left;
+		margin-left: 3%;
+	}
+
+	.ourph {
+		text-align: center;
+	}
+
+	.ourph article h2 {
+		margin-left: 0%;
+	}
+
+	.ourph article p {
+		width: 97%;
+		margin-top: 20px;
+		margin-left: 3%;
+		text-align: left;
+	}
+
+	.ourph img{
+		width: 100%;
+	}
+
+	.ourph .btn {
+	margin-left: 0;
+}
+
+	/* Video */
+
+	.video p {
+		padding-top: 160px;
+		font-size: 1.9rem;
+	}
+
+	/* Instagram */
+
+	.instagram {
+		display: none;
+	}
+}
